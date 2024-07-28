@@ -88,6 +88,7 @@ sphere {
 }
 ```
 ![PIC2](https://i.pinimg.com/originals/bb/6a/0c/bb6a0c8498ebf7bdda212194c97cf529.png)
+![pic4](https://i.pinimg.com/originals/66/42/fb/6642fbb4203f61b85674f87a5c13aeca.png)
 ---
 
 ## 4. Creating Basic Shapes
