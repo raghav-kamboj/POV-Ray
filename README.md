@@ -416,7 +416,7 @@ To get started with POV-Ray:
 **Messages Pane:**
 - Shows messages, errors, and other information related to the rendering process.
 
-[PIC 1](https://i.pinimg.com/736x/18/e4/ee/18e4eebb8256ad779d472c88e846a656.jpg)
+ ![PIC 1](https://i.pinimg.com/736x/18/e4/ee/18e4eebb8256ad779d472c88e846a656.jpg)
 ---
 
 ## 3. Basic Scene Structure
