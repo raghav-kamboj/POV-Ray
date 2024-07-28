@@ -49,7 +49,7 @@ To get started with POV-Ray:
 **Messages Pane:**
 - Shows messages, errors, and other information related to the rendering process.
   
- ![pic4](https://i.pinimg.com/originals/66/42/fb/6642fbb4203f61b85674f87a5c13aeca.png)
+ ![pic4](https://i.pinimg.com/originals/56/2b/b9/562bb989e6b78313e39c34327b2fcc2c.png)
  ![PIC 1](https://i.pinimg.com/736x/18/e4/ee/18e4eebb8256ad779d472c88e846a656.jpg)
 
 ---
