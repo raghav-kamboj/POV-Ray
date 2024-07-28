@@ -380,11 +380,12 @@ Congratulations! You've created a simple scene in POV-Ray.
    - [Translation (Move)](#translation-move)
    - [Rotation](#rotation)
    - [Scaling](#scaling)
-6. [Lighting](#lighting)
+6. [Textures and Pigments](#textures-and-pigments)
+7. [Lighting](#lighting)
    - [Point Light](#point-light)
    - [Spotlight](#spotlight)
-7. [Camera Settings](#camera-settings)
-8. [Example Project: Simple Scene](#example-project-simple-scene)
+8. [Camera Settings](#camera-settings)
+9. [Example Project: Simple Scene](#example-project-simple-scene)
 
 ---
 
@@ -404,6 +405,17 @@ To get started with POV-Ray:
 2. Choose the appropriate version for your operating system (Windows, macOS, Linux).
 3. Follow the installation instructions to set up POV-Ray on your computer.
 
+### Interface Familiarization
+
+**Text Editor:**
+- Write scripts to describe your scene.
+
+**Rendering Window:**
+- Displays the rendered image based on your script.
+
+**Messages Pane:**
+- Shows messages, errors, and other information related to the rendering process.
+
 ---
 
 ## 3. Basic Scene Structure
@@ -419,6 +431,10 @@ Here’s a basic example of a POV-Ray scene file:
 ```pov
 // Simple Scene
 #include "colors.inc" // Include standard color definitions
+
+background {
+    color rgb <0.8, 0.8, 0.8>
+}
 
 camera {
   location <0, 2, -3>
@@ -503,7 +519,43 @@ scale <1, 2, 1> // Double the height of the object
 
 ---
 
-## 6. Lighting
+## 6. Textures and Pigments
+
+Textures and pigments define the surface properties and colors of objects.
+
+### Pigment
+
+Defines the color of an object.
+
+```pov
+pigment { color Red }
+```
+
+### Example
+
+```pov
+sphere {
+  <0, 1, 2>, 1
+  texture {
+    pigment { color Red }
+  }
+}
+```
+
+### Texture
+
+Combines pigment and finish (surface properties like shininess).
+
+```pov
+texture {
+  pigment { color Blue }
+  finish { phong 1 }
+}
+```
+
+---
+
+## 7. Lighting
 
 Lighting is crucial for realistic scenes. POV-Ray supports different types of light sources:
 
@@ -532,7 +584,7 @@ light_source {
 
 ---
 
-## 7. Camera Settings
+## 8. Camera Settings
 
 The camera defines the viewpoint of the scene.
 
@@ -547,7 +599,7 @@ camera {
 
 ---
 
-## 8. Example Project: Simple Scene
+## 9. Example Project: Simple Scene
 
 Combining these elements, here’s a simple scene:
 
@@ -562,6 +614,10 @@ camera {
 light_source {
   <2, 4, -3>
   color White
+}
+
+background {
+    color rgb <0.8, 0.8, 0.8>
 }
 
 sphere {
