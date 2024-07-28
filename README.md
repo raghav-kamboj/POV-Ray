@@ -277,5 +277,5 @@ cylinder {
   translate <-1, 0, 0>
 }
 ```
-
+![PIC3](https://i.pinimg.com/originals/6d/86/1b/6d861b4ea545a4b15ddde95a8fb06655.png)
 ---
