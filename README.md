@@ -2,23 +2,23 @@
 # POV-Ray Beginner's Tutorial
 
 ## Table of Contents:
-1. [Introduction to POV-Ray](#introduction-to-pov-ray)
-2. [Downloading and Installation](#downloading-and-installation)
-3. [Basic Scene Structure](#basic-scene-structure)
-4. [Creating Basic Shapes](#creating-basic-shapes)
+1. [Introduction to POV-Ray](#1-introduction-to-pov-ray)
+2. [Downloading and Installation](#2-downloading-and-installation)
+3. [Basic Scene Structure](#3-basic-scene-structure)
+4. [Creating Basic Shapes](#4-creating-basic-shapes)
    - [Sphere](#sphere)
    - [Box](#box)
    - [Cylinder](#cylinder)
-5. [Transformations](#transformations)
+5. [Transformations](#5-transformations)
    - [Translation (Move)](#translation-move)
    - [Rotation](#rotation)
    - [Scaling](#scaling)
-6. [Textures and Pigments](#textures-and-pigments)
-7. [Lighting](#lighting)
+6. [Textures and Pigments](#6-textures-and-pigments)
+7. [Lighting](#7-lighting)
    - [Point Light](#point-light)
    - [Spotlight](#spotlight)
-8. [Camera Settings](#camera-settings)
-9. [Example Project: Simple Scene](#example-project-simple-scene)
+8. [Camera Settings](#8-camera-settings)
+9. [Example Project: Simple Scene](#9-example-project-simple-scene)
 
 ---
 
