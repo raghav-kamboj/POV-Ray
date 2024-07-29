@@ -134,7 +134,7 @@ Here’s a basic example of a POV-Ray scene file:
 #include "colors.inc" // Include standard color definitions
 
 background {
-    color rgb <0.8, 0.8, 0.8>
+    color Orange
 }
 
 camera {
