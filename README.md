@@ -325,5 +325,62 @@ camera {
 ## 9. Example Project: Simple Scene
 
 
+```
+#include "colors.inc"
+
+// Set the camera
+camera {
+  location <0, 6, -11>
+  look_at <8, 6, 0>
+}
+
+// Set the light source
+light_source {
+  <2, 10, -3>
+  color White
+}
+
+// Create the ground
+plane {
+  <0, .2, 0>, 0
+  texture {
+    pigment {
+      Brown  // Brownish color
+    }
+  }
+}
+
+// Create a simple mountain using a height field
+height_field {
+  function 512, 512 {
+    pattern {
+      granite // Granite pattern for randomness
+      scale <3, 0.5, 3>
+    }
+  }
+  scale <20, 5, 20>
+  texture {
+    pigment {
+      Green // Greenish color
+    }
+  }
+}
+
+
+
+sky_sphere{
+  pigment{
+  gradient y
+  color_map{
+  [0 color White]
+  [1 color Blue]
+  }
+
+![srftg](https://i.pinimg.com/736x/1e/79/e3/1e79e3809d873b613d6cdfcc98f9f954.jpg)
+  translate <0,.5,0>
+  }
+}
+```
+
 ---
 
