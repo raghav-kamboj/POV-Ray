@@ -172,6 +172,8 @@ sphere {
 }
 ```
 
+![](https://i.pinimg.com/736x/31/fd/5e/31fd5ed1e19db2d8251d286ff9f7deb3.jpg)
+
 ### Box
 
 ```pov
@@ -182,6 +184,8 @@ box {
   }
 }
 ```
+
+![](https://i.pinimg.com/736x/68/51/2a/68512a43fc681edf7df090604b704164.jpg)
 
 ### Cylinder
 
@@ -194,6 +198,8 @@ cylinder {
 }
 ```
 
+![](https://i.pinimg.com/736x/06/5f/49/065f49c1015298dd462f8da94cdc8793.jpg)
+
 ### Torus
 
 ```pov
@@ -204,6 +210,8 @@ torus {
   }
 }
 ```
+
+![](https://i.pinimg.com/736x/93/46/26/9346263d7106ed683c6c61f13407dae9.jpg)
 
 ### Cone
 
@@ -217,6 +225,8 @@ cone {
   }
 }
 ```
+
+![](https://i.pinimg.com/originals/0d/7e/63/0d7e63b827481a1cb13550d8d461176b.png)
 
 ---
 
