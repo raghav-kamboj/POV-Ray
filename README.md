@@ -25,7 +25,11 @@
 
 POV-Ray (Persistence of Vision Raytracer) is a script-based tool for creating stunning 3D graphics. It uses a simple text-based scene description language to define objects, lighting, and camera views.
 
+![picwuh](https://hof.povray.org/images/bigthumb/TopMod_StarBall.jpg) ![flkjn](https://hof.povray.org/images/bigthumb/pebbles.jpg)
+
+
 **What is Raytracing?**
+
 Raytracing is a technique for generating images by tracing the path of light through pixels in an image plane. It simulates effects like reflection, refraction, and shadows to create realistic images.
 
 ---
