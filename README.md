@@ -1,6 +1,3 @@
-
-# POV-Ray Beginner's Tutorial
-
 ## Table of Contents:
 1. [Introduction to POV-Ray](#1-introduction-to-pov-ray)
 2. [Downloading and Installation](#2-downloading-and-installation)
@@ -9,6 +6,8 @@
    - [Sphere](#sphere)
    - [Box](#box)
    - [Cylinder](#cylinder)
+   - [Torus](#torus)
+   - [Cone](#cone)
 5. [Transformations](#5-transformations)
    - [Translation (Move)](#translation-move)
    - [Rotation](#rotation)
@@ -49,8 +48,8 @@ To get started with POV-Ray:
 **Messages Pane:**
 - Shows messages, errors, and other information related to the rendering process.
   
- ![pic4](https://i.pinimg.com/originals/56/2b/b9/562bb989e6b78313e39c34327b2fcc2c.png)
- ![PIC 1](https://i.pinimg.com/736x/18/e4/ee/18e4eebb8256ad779d472c88e846a656.jpg)
+![pic4](https://i.pinimg.com/originals/56/2b/b9/562bb989e6b78313e39c34327b2fcc2c.png)
+![PIC 1](https://i.pinimg.com/736x/18/e4/ee/18e4eebb8256ad779d472c88e846a656.jpg)
 
 ---
 
@@ -125,6 +124,28 @@ cylinder {
   <0, 0, 0>, <0, 1, 0>, 0.5 // Start, end, and radius
   texture {
     pigment { color Green }
+  }
+}
+```
+
+### Torus
+
+```pov
+torus {
+  1, 0.3 // Major radius, minor radius
+  texture {
+    pigment { color Yellow }
+  }
+}
+```
+
+### Cone
+
+```pov
+cone {
+  <0, 0, 0>, 1, <0, 1, 0>, 0 // Base, base radius, apex, apex radius
+  texture {
+    pigment { color Purple }
   }
 }
 ```
@@ -278,6 +299,23 @@ cylinder {
   }
   translate <-1, 0, 0>
 }
+
+torus {
+  1, 0.3
+  texture {
+    pigment { color Yellow }
+  }
+  translate <0, 0, -2>
+}
+
+cone {
+  <0, 0, 0>, 1, <0, 1, 0>, 0
+  texture {
+    pigment { color Purple }
+  }
+  translate <0, 0, 2>
+}
 ```
 ![PIC3](https://i.pinimg.com/originals/6d/86/1b/6d861b4ea545a4b15ddde95a8fb06655.png)
 ---
+
