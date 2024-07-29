@@ -211,7 +211,9 @@ torus {
 cone {
   <0, 0, 0>, 1, <0, 1, 0>, 0 // Base, base radius, apex, apex radius
   texture {
-    pigment { color Purple }
+ pigment {
+    color Red
+  }
   }
 }
 ```
@@ -376,11 +378,12 @@ sky_sphere{
   [1 color Blue]
   }
 
-![srftg](https://i.pinimg.com/736x/1e/79/e3/1e79e3809d873b613d6cdfcc98f9f954.jpg)
+
   translate <0,.5,0>
   }
 }
 ```
+![srftg](https://i.pinimg.com/736x/1e/79/e3/1e79e3809d873b613d6cdfcc98f9f954.jpg)
 
 ---
 
