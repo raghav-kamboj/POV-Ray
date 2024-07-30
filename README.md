@@ -341,6 +341,7 @@ camera {
 ## 9. Example Project: Simple Scene
 
 1. Project 1
+
 ```
 #include "colors.inc"
 
