@@ -1,4 +1,8 @@
-![image](https://github.com/user-attachments/assets/7f276451-4330-4639-8e2b-17d5162b2b57)## Table of Contents:
+# POV-Ray
+
+---
+
+## Table of Contents:
 1. [Introduction to POV-Ray](#1-introduction-to-pov-ray)
 2. [Downloading and Interface Familiarization](#2-downloading-and-interface-familiarization)
 3. [Basic Scene Structure](#3-basic-scene-structure)
