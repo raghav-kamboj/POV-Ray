@@ -340,132 +340,8 @@ camera {
 
 ## 9. Example Project: Simple Scene
 
+
 1. Project 1
-
-```
-// Include standard colors and textures
-#include "colors.inc"
-
-// Set the camera
-camera {
-  location <0, 3, -11>
-  look_at <8, 6, 0>
-}
-
-// Set the light source
-light_source {
-  <2, 10, -3>
-  color White
-}
-
-// Create the ground
-plane {
-  <0, 1, 0>, 0
-  texture {
-    pigment {
-      color Brown  // Brownish color
-    }
-  }
-}
-
-// Create a simple mountain using a height field
-height_field {
-  function 512, 512 {
-    pattern {
-      granite // Granite pattern for randomness
-      scale <3, 0.5, 3>
-    }
-  }
-  scale <20, 5, 10>
-  texture {
-    pigment {
-      color Green // Greenish color
-    }
-  }
-}
-
-// Create a simple house
-box {
-  <-2, 0, -2>, <2, 2, 2>
-  texture {
-    pigment {
-      color Red // Red color
-    }
-  }
-  translate <5, 3, 10>
-}
-
-// Create simple trees using cones and spheres
-#declare Tree1 =
-union {
-  cone {
-    <-2, 4, 0>, 1
-    <-2, 5, 0>, 0.5
-  }
-  sphere {
-    <-2, 5, 0>, 0.5
-  }
-  texture {
-    pigment { color Green }
-  }
-}
-
-#declare Tree2 =
-union {
-  cone {
-    <0, 3.5, 0>, 0.7
-    <0, 2, 0>, 1.5
-  }
-  sphere {
-    <0, 3.5, 0>, 0.75
-  }
-  texture {
-    pigment { color Green }
-  }
-}
-
-// Place the trees in the scene
-object {
-  Tree1
-  translate <4, 1, 10>
-}
-
-object {
-  Tree2
-  translate <8, 3, 10>
-}
-
-// Sky sphere
-sky_sphere {
-  pigment {
-    gradient y
-    color_map {
-      [0.0 color White]
-      [1.0 color Blue]
-    }
-  }
-  scale <1, 2, 1>
-  translate <0, -0.5, 0>
-}
- // Tree trunk (Cylinder)
-cylinder {
-  <8, 3, 10>, <8, 6, 10>, .7
-  texture {
-    pigment { color Brown } // Brown color
-  }
-}
- // Tree trunk (Cylinder)
-cylinder {
-  <2, 3, 10>, <2, 5, 10>, .5
-  texture {
-    pigment { color Brown } // Brown color
-  }
-}
-```
-
-![srftg](https://i.pinimg.com/originals/6c/c4/aa/6cc4aaa692381a0841255ca8af253458.png)
-
-2. Project 2
 
 
 ```
@@ -733,5 +609,131 @@ sphere {
 ```
 
 ![](https://i.pinimg.com/originals/dc/8d/50/dc8d50f1842cee2e9e9017c81dca904f.png)
+
+2. Project 2
+
+```
+// Include standard colors and textures
+#include "colors.inc"
+
+// Set the camera
+camera {
+  location <0, 3, -11>
+  look_at <8, 6, 0>
+}
+
+// Set the light source
+light_source {
+  <2, 10, -3>
+  color White
+}
+
+// Create the ground
+plane {
+  <0, 1, 0>, 0
+  texture {
+    pigment {
+      color Brown  // Brownish color
+    }
+  }
+}
+
+// Create a simple mountain using a height field
+height_field {
+  function 512, 512 {
+    pattern {
+      granite // Granite pattern for randomness
+      scale <3, 0.5, 3>
+    }
+  }
+  scale <20, 5, 10>
+  texture {
+    pigment {
+      color Green // Greenish color
+    }
+  }
+}
+
+// Create a simple house
+box {
+  <-2, 0, -2>, <2, 2, 2>
+  texture {
+    pigment {
+      color Red // Red color
+    }
+  }
+  translate <5, 3, 10>
+}
+
+// Create simple trees using cones and spheres
+#declare Tree1 =
+union {
+  cone {
+    <-2, 4, 0>, 1
+    <-2, 5, 0>, 0.5
+  }
+  sphere {
+    <-2, 5, 0>, 0.5
+  }
+  texture {
+    pigment { color Green }
+  }
+}
+
+#declare Tree2 =
+union {
+  cone {
+    <0, 3.5, 0>, 0.7
+    <0, 2, 0>, 1.5
+  }
+  sphere {
+    <0, 3.5, 0>, 0.75
+  }
+  texture {
+    pigment { color Green }
+  }
+}
+
+// Place the trees in the scene
+object {
+  Tree1
+  translate <4, 1, 10>
+}
+
+object {
+  Tree2
+  translate <8, 3, 10>
+}
+
+// Sky sphere
+sky_sphere {
+  pigment {
+    gradient y
+    color_map {
+      [0.0 color White]
+      [1.0 color Blue]
+    }
+  }
+  scale <1, 2, 1>
+  translate <0, -0.5, 0>
+}
+ // Tree trunk (Cylinder)
+cylinder {
+  <8, 3, 10>, <8, 6, 10>, .7
+  texture {
+    pigment { color Brown } // Brown color
+  }
+}
+ // Tree trunk (Cylinder)
+cylinder {
+  <2, 3, 10>, <2, 5, 10>, .5
+  texture {
+    pigment { color Brown } // Brown color
+  }
+}
+```
+
+![srftg](https://i.pinimg.com/originals/6c/c4/aa/6cc4aaa692381a0841255ca8af253458.png)
+
 ---
 
