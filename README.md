@@ -1,4 +1,4 @@
-## Table of Contents:
+![image](https://github.com/user-attachments/assets/7f276451-4330-4639-8e2b-17d5162b2b57)## Table of Contents:
 1. [Introduction to POV-Ray](#1-introduction-to-pov-ray)
 2. [Downloading and Interface Familiarization](#2-downloading-and-interface-familiarization)
 3. [Basic Scene Structure](#3-basic-scene-structure)
@@ -336,7 +336,7 @@ camera {
 
 ## 9. Example Project: Simple Scene
 
-
+1. Project 1
 ```
 #include "colors.inc"
 
@@ -395,5 +395,273 @@ sky_sphere{
 ```
 ![srftg](https://i.pinimg.com/736x/1e/79/e3/1e79e3809d873b613d6cdfcc98f9f954.jpg)
 
+2. Project 2
+
+
+```
+// tree.pov
+#version 3.7;
+global_settings { assumed_gamma 1.0 }
+
+// Camera settings
+camera {
+  location <15, 8, 30>
+  look_at <3, 4, 5>
+}
+
+// Light source
+light_source {
+  <-8, 20, 4>
+  color rgb <1, 1, 1>
+}
+
+// Background color
+background {
+  color rgb <0.6, 0.8, 1>
+}
+
+// Ground plane (Grass)
+plane {
+  y, 0
+  texture {
+    pigment { color rgb <0.2, 0.8, 0.2> }
+  }
+}
+
+// Tree trunk (Cylinder)
+cylinder {
+  <8, 4, 0>, <8, 0, 0>, 0.2
+  texture {
+    pigment { color rgb <0.55, 0.27, 0.07> } // Brown color
+  }
+}
+
+// Tree branches (Cones)
+cone {
+  <8, 5, 0>, 0.0, <8, 3, 0>, 1.4
+  texture {
+    pigment { color rgb <0.0, 0.5, 0.0> } // Green color
+  }
+}
+
+cone {
+  <8, 6, 0>, 0.0, <8, 4, 0>, 1.0
+  texture {
+    pigment { color rgb <0.0, 0.5, 0.0> } // Green color
+  }
+}
+
+cone {
+  <8, 7, 0>, 0.0, <8, 5, 0>, 0.8
+  texture {
+    pigment { color rgb <0.0, 0.5, 0.0> } // Green color
+  }
+}
+
+// Tree trunk (Cylinder)
+cylinder {
+  <0, 4, 8>, <0, 0, 8>, 0.2
+  texture {
+    pigment { color rgb <0.55, 0.27, 0.07> } // Brown color
+  }
+}
+
+// Tree branches (Cones)
+cone {
+  <0, 5, 8>, 0.0, <0, 3, 8>, 1.4
+  texture {
+    pigment { color rgb <0.0, 0.5, 0.0> } // Green color
+  }
+}
+
+cone {
+  <0, 6, 8>, 0.0, <0, 4, 8>, 1.0
+  texture {
+    pigment { color rgb <0.0, 0.5, 0.0> } // Green color
+  }
+}
+
+cone {
+  <0, 7, 8>, 0.0, <0, 5, 8>, 0.8
+  texture {
+    pigment { color rgb <0.0, 0.5, 0.0> } // Green color
+  }
+}
+
+box {
+  <-2, 0, -2>, <2, 3, 2>
+  texture {
+    pigment { color rgb <1, 0.5, 0.5> }
+  }
+}
+union {
+  triangle {
+    <-2, 3, -2>, <2, 3, -2>, <0, 5, -2>
+  }
+  triangle {
+    <-2, 3, 2>, <2, 3, 2>, <0, 5, 2>
+  }
+  polygon {
+    4,
+    <0, 5, -2>, <-2, 3, -2>, <-2, 3, 2>, <0, 5, 2>
+  }
+  polygon {
+    4,
+    <0, 5, -2>, <2, 3, -2>, <2, 3, 2>, <0, 5, 2>
+  }
+  texture {
+    pigment { color rgb <0.5, 0.1, 0.1> }
+  }
+  rotate <0, 0, 0>
+  translate <0, 0, 0>
+}
+
+// Flower
+sphere {
+  <5, 0.5, 1>, 0.2
+  texture {
+    pigment { color rgb <1, 0, 0> } // Red color
+  }
+}
+
+cylinder {
+  <5, 0, 1>, <5, 0.5, 1>, 0.09
+  texture {
+    pigment { color rgb <0, 1, 0> } // Green stem
+  }
+} 
+
+// Flower
+sphere {
+  <5, 0.5, -2>, 0.2
+  texture {
+    pigment { color rgb <1, 0, 0> } // Red color
+  }
+}
+
+cylinder {
+  <5, 0, -2>, <5, 0.5, -2>, 0.09
+  texture {
+    pigment { color rgb <0, 1, 0> } // Green stem
+  }
+}
+// Flower
+sphere {
+  <4, 0.5, 1>, 0.2
+  texture {
+    pigment { color rgb <1, 0, 0> } // Red color
+  }
+}
+
+cylinder {
+  <4, 0, 1>, <4, 0.5, 1>, 0.09
+  texture {
+    pigment { color rgb <0, 1, 0> } // Green stem
+  }
+}
+// Flower
+sphere {
+  <6, 0.5, 1>, 0.2
+  texture {
+    pigment { color rgb <1, 0, 0> } // Red color
+  }
+}
+
+cylinder {
+  <6, 0, 1>, <6, 0.5, 1>, 0.09
+  texture {
+    pigment { color rgb <0, 1, 0> } // Green stem
+  }
+}
+// Flower
+sphere {
+  <7, 0.5, 1>, 0.2
+  texture {
+    pigment { color rgb <1, 0, 0> } // Red color
+  }
+}
+
+cylinder {
+  <7, 0, 1>, <7, 0.5, 1>, 0.09
+  texture {
+    pigment { color rgb <0, 1, 0> } // Green stem
+  }
+}
+
+// Bench
+box {
+  <-1, 0, 2>, <1, 0.1, 3>
+  texture {
+    pigment { color rgb <0.5, 0.25, 0> } // Brown color
+  }
+}
+
+box {
+  <-1, 0.1, 3.8>, <1, 0.2, 4>
+  texture {
+    pigment { color rgb <0.5, 0.25, 0> } // Brown color
+  }
+}
+
+box {
+  <-1, 0.2, 3.8>, <-0.8, 1, 4>
+  texture {
+    pigment { color rgb <0.5, 0.25, 0> } // Brown color
+  }
+}
+
+box {
+  <0.8, 0.2, 3.8>, <1, 1, 4>
+  texture {
+    pigment { color rgb <0.5, 0.25, 0> } // Brown color
+  }
+}   
+
+// Cloud
+sphere {
+  <10, 10, 10>, 2
+  texture {
+    pigment { color rgb <1, 1, 1> } // White color
+  }
+}
+
+sphere {
+  <12, 10, 10>, 2
+  texture {
+    pigment { color rgb <1, 1, 1> } // White color
+  }
+}
+
+sphere {
+  <11, 12, 10>, 2
+  texture {
+    pigment { color rgb <1, 1, 1> } // White color
+  }
+}      
+ 
+// Cloud
+sphere {
+  <20, 10, 20>, 2
+  texture {
+    pigment { color rgb <1, 1, 1> } // White color
+  }
+}
+
+sphere {
+  <22, 10, 20>, 2
+  texture {
+    pigment { color rgb <1, 1, 1> } // White color
+  }
+}
+
+sphere {
+  <21, 12, 20>, 2
+  texture {
+    pigment { color rgb <1, 1, 1> } // White color
+  }
+}
+```
+
+![](https://i.pinimg.com/originals/dc/8d/50/dc8d50f1842cee2e9e9017c81dca904f.png)
 ---
 
